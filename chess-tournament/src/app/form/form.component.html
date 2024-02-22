@@ -1,1 +1,64 @@
-<p>form works!</p>
+<form class="py-5 px-3 bg-blue-500 h-screen flex flex-col items-center">
+
+    <p class="text-white text-3xl font-medium">
+        Formularz
+    </p>
+
+    <div class="form__input py-4 flex flex-col w-1/6">
+        <label for="name" class="text-white text-lg">Imię</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Imię..." 
+            class="py-2 px-2 rounded-lg mt-2 border-0 outline-none" 
+        />
+    </div>
+    
+    <div class="form__input py-4 flex flex-col w-1/6">
+        <label for="sname" class="text-white text-lg">Nazwisko</label>
+        <input 
+            type="text" 
+            id="sname" 
+            name="sname" 
+            placeholder="Nazwisko..." 
+            class="py-2 px-2 rounded-lg mt-2 border-0 outline-none" 
+        />
+    </div>
+
+    <div class="form__input py-4 flex flex-col w-1/6">
+        <label for="email" class="text-white text-lg">E-mail</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Email..." 
+            class="py-2 px-2 rounded-lg mt-2 border-0 outline-none" 
+        />
+    </div>
+
+    <div class="form__input py-4 flex flex-col w-1/6">
+        <label for="ranking" class="text-white text-lg">Ranking elo (opcjonalnie)</label>
+        <input 
+            type="text" 
+            id="ranking" 
+            name="ranking" 
+            placeholder="Ranking..." 
+            class="py-2 px-2 rounded-lg mt-2 border-0 outline-none" 
+        />
+    </div>
+
+    <div class="form__input py-4 flex gap-2 w-1/6">
+        <input 
+            type="checkbox" 
+            id="isRodo" 
+            name="isRodo" 
+        />
+        <label for="isRodo" class="text-white text-lg">Zgadzam się na przetwarzanie danych</label>
+    </div>
+
+    <button type="submit" class="rounded-lg px-3 py-4 bg-blue-600 text-white text-lg hover:opacity-75 duration-300">
+        Wyślij zgłoszenie
+    </button>
+
+</form>

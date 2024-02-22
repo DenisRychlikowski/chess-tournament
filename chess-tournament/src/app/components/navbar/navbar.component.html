@@ -1,1 +1,21 @@
-<p>navbar works!</p>
+<div class="nav__container flex justify-evenly items-center bg-blue-400 h-1/4">
+    <div class="nav__logo flex items-center justify-center h-full">
+        <span class="text-white text-2xl font-medium">Szachy Ozimek</span>
+    </div>
+    <div class="nav__links h-full">
+        <ul class="flex justify-evenly items-center h-full">
+            <li [routerLink]="['/main']" routerLinkActive="router-link-active"  class="text-white text-xl py-5 px-3 cursor-pointer hover:opacity-75 duration-300">
+                Strona główna
+            </li>
+            <li [routerLink]="['/calendar']" routerLinkActive="router-link-active"  class="text-white text-xl py-5 px-3 cursor-pointer hover:opacity-75 duration-300">
+                Kalendarium
+            </li>
+            <li [routerLink]="['/form']" routerLinkActive="router-link-active"  class="text-white text-xl py-5 px-3 cursor-pointer hover:opacity-75 duration-300">
+                Formularz zgłoszeniowy
+            </li>
+            <li [routerLink]="['/contact']" routerLinkActive="router-link-active"  class="text-white text-xl py-5 px-3 cursor-pointer hover:opacity-75 duration-300">
+                Kontakt
+            </li>
+        </ul>
+    </div>
+</div>
